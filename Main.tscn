@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://chv763bcl7d6d" path="res://main.gd" id="1_glv2v"]
 
+[sub_resource type="Environment" id="Environment_g4v7s"]
+
 [node name="Main" type="Node3D" unique_id=1854067212]
 script = ExtResource("1_glv2v")
 
@@ -15,3 +17,9 @@ tracker = &"left_hand"
 
 [node name="RightHand" type="XRController3D" parent="XROrigin3D" unique_id=332131472]
 tracker = &"right_hand"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1809200788]
+environment = SubResource("Environment_g4v7s")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=827083113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0506293, 1.4287652)
